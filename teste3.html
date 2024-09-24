@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é meu primeiro site">
+    <meta name="keywords" content="programação, html, css, javascript">
+    <meta name="author" content="Dimitri Teixeira">
+
+    <title>CADASTRO</title>
+
+    <style>
+        /* Estilos principais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Cor de fundo mais clara */
+        }
+
+        /* Contêiner flexível para imagem e formulário */
+        .container {
+            display: flex;
+            align-items: center; /* Alinha os elementos ao centro */
+            justify-content: center; /* Centraliza os elementos horizontalmente */
+            padding: 20px;
+            max-width: 1200px; /* Largura máxima para manter uniformidade */
+            margin: auto; /* Centraliza o contêiner */
+        }
+
+        /* Estilo para o lado da imagem */
+        .image-container {
+            flex: 1;
+            text-align: center; /* Alinha a imagem ao centro */
+            transition: transform 0.3s; /* Animação de transformação */
+        }
+
+        /* Ajuste da imagem */
+        .image-container img {
+            max-width: 80%; /* Limita a largura da imagem */
+            height: auto;
+            border-radius: 10px; /* Bordas arredondadas na imagem */
+        }
+
+        /* Efeito de hover na imagem */
+        .image-container:hover {
+            transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+        }
+
+        /* Estilo para o formulário */
+        .form-container {
+            flex: 1;
+            padding-left: 20px; /* Espaçamento entre a imagem e o formulário */
+        }
+
+        /* Ajustes no formulário */
+        form {
+            display: block;
+        }
+
+        h1 {
+            color: #6A0DAD; /* Cor roxa para o título principal */
+            text-align: center; /* Centraliza o título */
+        }
+
+        h2 {
+            color: #6A0DAD; /* Cor roxa para subtítulos */
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #6A0DAD; /* Cor roxa para os rótulos */
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #6A0DAD; /* Borda roxa para campos de entrada */
+            border-radius: 4px; /* Bordas arredondadas */
+            transition: border-color 0.3s; /* Transição suave para a borda */
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus {
+            border-color: #5B0FA4; /* Borda mais escura ao focar */
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #6A0DAD; /* Fundo roxo para o botão */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px; /* Bordas arredondadas */
+            transition: background-color 0.3s; /* Transição suave para o fundo */
+            width: 100%; /* Botão ocupa a largura total */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5B0FA4; /* Tom mais escuro de roxo ao passar o mouse */
+        }
+
+        .success-message {
+            color: green;
+            margin-top: 10px;
+            display: none; /* Oculta por padrão */
+            text-align: center; /* Centraliza a mensagem de sucesso */
+        }
+
+        /* Estilo de adaptação para telas pequenas */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Empilha imagem e formulário em telas pequenas */
+                align-items: center; /* Centraliza tudo na tela */
+            }
+
+            .form-container {
+                padding-left: 0; /* Remove padding em telas pequenas */
+                margin-top: 20px; /* Espaço entre imagem e formulário */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Lado esquerdo: imagem -->
+        <div class="image-container">
+            <img src="ilustracao.svg.svg" alt="Minha Imagem SVG">
+        </div>
+
+        <!-- Lado direito: formulário -->
+        <div class="form-container">
+            <h1>Formulário</h1>
+            <form id="myForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Escreva seu e-mail" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                
+                <h2>Teste de Personalidade:</h2>
+                <p>Quais cores mais combinam com sua personalidade?</p>
+
+                <input type="checkbox" id="azul" name="cor" value="azul">
+                <label for="azul">Azul</label>
+
+                <input type="checkbox" id="preto" name="cor" value="preto">
+                <label for="preto">Preto</label>
+
+                <input type="checkbox" id="roxo" name="cor" value="roxo">
+                <label for="roxo">Roxo</label>
+
+                <input type="checkbox" id="cinza" name="cor" value="cinza">
+                <label for="cinza">Cinza</label>
+
+                <input type="checkbox" id="amarelo" name="cor" value="amarelo">
+                <label for="amarelo">Amarelo</label>
+
+                <input type="checkbox" id="verde" name="cor" value="verde">
+                <label for="verde">Verde</label>
+
+                <input type="checkbox" id="rosa" name="cor" value="rosa">
+                <label for="rosa">Rosa</label>
+
+                <h2>Quais são seus hobbies?</h2>
+                <select>
+                    <option value="futebol">Futebol</option>
+                    <option value="basquete">Basquete</option>
+                    <option value="leitura">Leitura</option>
+                    <option value="musculação">Musculação</option>
+                    <option value="natação">Natação</option>
+                    <option value="corrida">Corrida</option>
+                    <option value="jogos_online">Jogos Online</option>
+                </select>
+
+                <h2>Se você fosse um animal, qual seria?</h2>
+                <p>Você pode selecionar uma ou mais alternativas</p>
+
+                <input type="radio" id="dog" name="animal" value="cachorro">
+                <label for="dog">Cachorro</label>
+
+                <input type="radio" id="bird" name="animal" value="passaro">
+                <label for="bird">Pássaro</label>
+
+                <input type="radio" id="cat" name="animal" value="gato">
+                <label for="cat">Gato</label>
+
+                <input type="radio" id="urso" name="animal" value="urso">
+                <label for="urso">Urso</label>
+
+                <input type="radio" id="formiga" name="animal" value="formiga">
+                <label for="formiga">Formiga</label>
+
+                <input type="radio" id="abelha" name="animal" value="abelha">
+                <label for="abelha">Abelha</label>
+
+                <input type="radio" id="peixe" name="animal" value="peixe">
+                <label for="peixe">Peixe</label>
+
+                <p>Outros, quais seriam?</p>
+                <textarea rows="4" cols="60">...</textarea>
+                <hr>
+
+                <input type="submit" value="Enviar">
+                <div class="success-message" id="successMessage">Formulário enviado com sucesso!</div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript para manipular o envio do formulário
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            // Exibir mensagem de sucesso
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
