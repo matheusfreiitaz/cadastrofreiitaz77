@@ -1,0 +1,487 @@
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Freitas | Desenvolvedor Full Stack</title>
+    <meta name="description" content="Portfólio profissional de Matheus Freitas, Desenvolvedor Full Stack especializado em React e Node.js">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+     <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animations.js">
+    <link rel="stylesheet" href="dark-mode.js" disabled>
+    
+    <!-- Fontes e ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3a86ff">
+    
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">MF</a>
+                
+                <div class="nav-links">
+                    <a href="#about">Sobre</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#experience">Experiência</a>
+                    <a href="#contact">Contato</a>
+                    <button id="dark-mode-toggle" aria-label="Alternar modo escuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <button class="hamburger" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Transformando ideias em <span>experiências digitais</span></h1>
+                    <p class="hero-subtitle">Matheus Freitas • Desenvolvedor Full Stack</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Ver projetos</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">Contato</a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                       
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="matheusfreitas.jpeg" alt="Matheus Freitas" loading="lazy">
+                    </div>
+                    <div class="decorations">
+                        <div class="circle"></div>
+                        <div class="square"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mim -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">Sobre <span>Mim</span></h2>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Sou Desenvolvedor Full Stack com experiência sólida em criação de aplicações web modernas, responsivas e centradas no usuário. Tenho como principais competências o uso de JavaScript, React e Node.js, sempre buscando escrever código limpo e seguir boas práticas de desenvolvimento.
+
+Minha abordagem combina design thinking com desenvolvimento ágil para entregar soluções que não apenas funcionam bem, mas também proporcionam excelentes experiências ao usuário.</p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span>Nome:</span>
+                                <p>Matheus Freitas</p>
+                            </div>
+                            <div class="info-item">
+                                <span>Email:</span>
+                                <p>matheusfreiitas77@gmail.com</p>
+                            </div>
+                            <div class="info-item">
+                                <span>Experiência:</span>
+                                <p>1+de anos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-actions">
+    <a href="#contact" class="btn btn-primary">Contato</a>
+    <a href="../curriculo (1).pdf" download="SeuNome-Curriculo.pdf" class="btn btn-outline" id="download-cv">
+        <span>Baixar CV</span>
+        <i class="fas fa-download"></i>
+    </a>
+</div>
+                    </div>
+                    
+                    <div class="about-skills">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Minhas <span>Habilidades</span></h2>
+                
+                <div class="skills-grid">
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ferramentas -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Meus <span>Projetos</span></h2>
+                
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="dashborde.png" alt="Dashboard Financeiro" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Dashboard Financeiro</h3>
+                            <p>Plataforma de análise financeira com visualização de dados em tempo real e relatórios personalizados.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    <span>Código</span>
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projeto 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="simple.png" alt="E-commerce" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Loja Virtual</h3>
+                            <p>Sistema completo de e-commerce com carrinho, checkout e integração com pagamentos.</p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>Stripe</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    <span>Código</span>
+                                </a>
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-more">
+                    <a href="#" class="btn btn-outline">
+                        <span>Ver todos os projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Experiência <span>Profissional</span></h2>
+                
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date"><br>2025 - Presente</div>
+                        <br><br><br><br>
+                        <div class="timeline-content">
+                            <h3>Instrutor de Técnico em Informática</h3>
+                            <h4>Grau Educacional Ribeirão das Neves</h4>
+                            <p>Ministro aulas sobre lógica de programação, arquitetura de computadores e desenvolvimento web, com foco em capacitação técnica e prática de alunos para o mercado.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date"><br> 2024 - Presente</div>
+                        <br><br><br><br>
+                        <div class="timeline-content">
+                            <h3>Desenvolvedor e Suporte Técnico</h3>
+                            <h4>Provedora de Internet</h4>
+                            <p>Atuação em suporte técnico e desenvolvimento de soluções internas, com foco em automação e sistemas para otimização de processos da empresa.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date"><br>2024 - Presente</div>
+                        <br><br><br><br>
+                        <div class="timeline-content">
+                            <h3>Graduando em Ciência da Computação</h3>
+                            <h4>Faculdade Newton Paiva</h4>
+                            <p>Em formação com foco em desenvolvimento web, bancos de dados, análise de dados e arquitetura de sistemas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Entre em <span>Contato</span></h2>
+                
+                <div class="contact-content">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Enviar mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>matheusfreiitas77@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Telefone</h4>
+                                <p>+55 (31) 988896957</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/matheus-felipe77/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/matheusfreiitaz" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">MF</a>
+                    <p>Desenvolvedor Full Stack</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#skills">Habilidades</a></li>
+                            <li><a href="#projects">Projetos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#contact">Mensagem</a></li>
+                            <li><a href="mailto:matheusfreiitas77@gmail.com">Email</a></li>
+                            <li><a href="tel:+5531988896957">Telefone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Matheus Freitas. Todos os direitos reservados.</p>
+                
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init('YOUR_USER_ID');
+    </script>
+    <script src="main.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="animations.js"></script>
+    <script src="form-handler.js"></script>
+    <script src="download-cv.js"></script>
+</body>
+</html>
